@@ -1,0 +1,51 @@
+﻿@page "/fetchdata"
+@using BookList.Library
+@inject BookListService ListService
+
+<PageTitle>Book List</PageTitle>
+
+<h1>Book List</h1>
+
+<p>This component demonstrates fetching data from a service.</p>
+
+@if (books == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Author (F)</th>
+                <th>Genre</th>
+                <th>PublicationDate</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var book in books)
+            {
+                <tr>
+                    <td>@book.Title</td>
+                    <td>@book.Author</td>
+                    <td>@book.Genre</td>
+                    <td>@book.PublicationDate</td>
+                    <td>@book.Description</td>
+                </tr>
+                        
+                }
+        </tbody>
+    </table>
+}
+
+@code {
+    private List<BookList> books;
+
+    protected override async Task OnInitializedAsync()
+    {
+        books = await ListService.GetbookAsync();
+    }
+}
+
