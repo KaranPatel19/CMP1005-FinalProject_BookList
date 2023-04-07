@@ -1,0 +1,9 @@
+
+BooksController/obj/
+BookListTests/bin/
+BookList.Library/bin/
+BookListTests/obj/
+BookList/obj/
+BookList/bin/
+BookList.IntegrationTests/obj/
+BookList.Library/obj/
