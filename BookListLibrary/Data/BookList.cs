@@ -21,7 +21,7 @@ namespace BookListLibrary.Data
         public string Genre { get; set; }
 
         [Required]
-        public DateTime PublicationDate { get; set; }
+        public string PublicationDate { get; set; }
 
         [MaxLength(500)]
         public string Description { get; set; }

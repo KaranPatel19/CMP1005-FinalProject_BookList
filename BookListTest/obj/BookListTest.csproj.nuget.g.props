@@ -21,6 +21,6 @@
   </ImportGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <Pkgxunit_analyzers Condition=" '$(Pkgxunit_analyzers)' == '' ">/Users/karanpatel/.nuget/packages/xunit.analyzers/1.0.0</Pkgxunit_analyzers>
-    <PkgNewtonsoft_Json Condition=" '$(PkgNewtonsoft_Json)' == '' ">/Users/karanpatel/.nuget/packages/newtonsoft.json/9.0.1</PkgNewtonsoft_Json>
+    <PkgMicrosoft_Bcl_Build Condition=" '$(PkgMicrosoft_Bcl_Build)' == '' ">/Users/karanpatel/.nuget/packages/microsoft.bcl.build/1.0.14</PkgMicrosoft_Bcl_Build>
   </PropertyGroup>
 </Project>

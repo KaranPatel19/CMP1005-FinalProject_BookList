@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/karanpatel/Desktop/web advance/BookList/BookListLibrary/BookListLibrary.csproj": {}
+    "/Users/karanpatel/Documents/CMP1005-FinalProject_BookList/BookListLibrary/BookListLibrary.csproj": {}
   },
   "projects": {
-    "/Users/karanpatel/Desktop/web advance/BookList/BookListLibrary/BookListLibrary.csproj": {
+    "/Users/karanpatel/Documents/CMP1005-FinalProject_BookList/BookListLibrary/BookListLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/karanpatel/Desktop/web advance/BookList/BookListLibrary/BookListLibrary.csproj",
+        "projectUniqueName": "/Users/karanpatel/Documents/CMP1005-FinalProject_BookList/BookListLibrary/BookListLibrary.csproj",
         "projectName": "BookListLibrary",
-        "projectPath": "/Users/karanpatel/Desktop/web advance/BookList/BookListLibrary/BookListLibrary.csproj",
+        "projectPath": "/Users/karanpatel/Documents/CMP1005-FinalProject_BookList/BookListLibrary/BookListLibrary.csproj",
         "packagesPath": "/Users/karanpatel/.nuget/packages/",
-        "outputPath": "/Users/karanpatel/Desktop/web advance/BookList/BookListLibrary/obj/",
+        "outputPath": "/Users/karanpatel/Documents/CMP1005-FinalProject_BookList/BookListLibrary/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/karanpatel/.nuget/NuGet/NuGet.Config"
@@ -38,6 +38,20 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
+          "dependencies": {
+            "FireSharp": {
+              "target": "Package",
+              "version": "[2.0.4, )"
+            },
+            "FirebaseAdmin": {
+              "target": "Package",
+              "version": "[2.3.0, )"
+            },
+            "FirebaseDatabase.net": {
+              "target": "Package",
+              "version": "[4.2.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
