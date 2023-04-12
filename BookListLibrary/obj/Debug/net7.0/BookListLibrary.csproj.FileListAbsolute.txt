@@ -1,0 +1,12 @@
+/Users/karanpatel/Desktop/web advance/BookList/BookListLibrary/bin/Debug/net7.0/BookListLibrary.deps.json
+/Users/karanpatel/Desktop/web advance/BookList/BookListLibrary/bin/Debug/net7.0/BookListLibrary.dll
+/Users/karanpatel/Desktop/web advance/BookList/BookListLibrary/bin/Debug/net7.0/BookListLibrary.pdb
+/Users/karanpatel/Desktop/web advance/BookList/BookListLibrary/obj/Debug/net7.0/BookListLibrary.csproj.AssemblyReference.cache
+/Users/karanpatel/Desktop/web advance/BookList/BookListLibrary/obj/Debug/net7.0/BookListLibrary.GeneratedMSBuildEditorConfig.editorconfig
+/Users/karanpatel/Desktop/web advance/BookList/BookListLibrary/obj/Debug/net7.0/BookListLibrary.AssemblyInfoInputs.cache
+/Users/karanpatel/Desktop/web advance/BookList/BookListLibrary/obj/Debug/net7.0/BookListLibrary.AssemblyInfo.cs
+/Users/karanpatel/Desktop/web advance/BookList/BookListLibrary/obj/Debug/net7.0/BookListLibrary.csproj.CoreCompileInputs.cache
+/Users/karanpatel/Desktop/web advance/BookList/BookListLibrary/obj/Debug/net7.0/BookListLibrary.dll
+/Users/karanpatel/Desktop/web advance/BookList/BookListLibrary/obj/Debug/net7.0/refint/BookListLibrary.dll
+/Users/karanpatel/Desktop/web advance/BookList/BookListLibrary/obj/Debug/net7.0/BookListLibrary.pdb
+/Users/karanpatel/Desktop/web advance/BookList/BookListLibrary/obj/Debug/net7.0/ref/BookListLibrary.dll

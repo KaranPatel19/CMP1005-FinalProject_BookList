@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
-using BookList.Library;
+using BookListLibrary.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 

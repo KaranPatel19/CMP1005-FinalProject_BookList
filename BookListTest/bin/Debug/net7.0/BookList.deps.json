@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "BookList/1.0.0": {
+        "dependencies": {
+          "BookListLibrary": "1.0.0"
+        },
+        "runtime": {
+          "BookList.dll": {}
+        }
+      },
+      "BookListLibrary/1.0.0": {
+        "runtime": {
+          "BookListLibrary.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "BookList/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BookListLibrary/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
