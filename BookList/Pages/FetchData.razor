@@ -1,15 +1,13 @@
 ﻿@page "/fetchdata"
 @using BookListLibrary.Data
 @using BookListLibrary.Services
-@inject BookListService ListService
+@inject BookListService BookListService
 
 <PageTitle>Book List</PageTitle>
 
 <h1>Book List</h1>
-
 <p>This component demonstrates fetching data from a service.</p>
-
-@if (lists == null)
+@if (books == null)
 {
     <p><em>Loading...</em></p>
 }
@@ -21,21 +19,19 @@ else
                 <th>Title</th>
                 <th>Author</th>
                 <th>Genre</th>
-                <th>PublicationDate</th>
+                <th>Publication Date</th>
                 <th>Description</th>
             </tr>
         </thead>
         <tbody>
-            @foreach (var list in lists)
+            @foreach (var book in books)
             {
                 <tr>
-
-                    <td>@list.Title</td>
-                    <td>@list.Author</td>
-                    <td>@list.Genre</td>
-                    <td>@list.PublicationDate</td>
-                    <td>@list.Description</td>
-
+                    <td>@book.Title</td>
+                    <td>@book.Author</td>
+                    <td>@book.Genre</td>
+                    <td>@book.PublicationDate</td>
+                    <td>@book.Description</td>
                 </tr>
             }
         </tbody>
@@ -43,10 +39,10 @@ else
 }
 
 @code {
-    private List<BookList>? lists;
+    private List<BookList> books;
 
     protected override async Task OnInitializedAsync()
     {
-        lists = await ListService.GetbookAsync();
+        books = await BookListService.GetAllBooksAsync();
     }
 }
