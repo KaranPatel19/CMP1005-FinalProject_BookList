@@ -1,0 +1,40 @@
+﻿<Properties StartupConfiguration="{397261E1-03FE-4B54-99E3-4AA4D91D3981}|https">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="BookListLibrary/Services/BookListService.cs">
+    <Files>
+      <File FileName="BookListLibrary/Services/BookListService.cs" Line="16" Column="6" />
+      <File FileName="BookListLibrary/Data/BookList.cs" Line="30" Column="1" />
+      <File FileName="BookList/Pages/FetchData.razor" Line="13" Column="2" />
+      <File FileName="BookListLibrary/Services/FirebaseConfigHelper.cs" Line="16" Column="2" />
+      <File FileName="BookList/Program.cs" />
+      <File FileName="BookList/Shared/NavMenu.razor" Line="19" Column="78" />
+      <File FileName="BookList/Pages/Counter.razor" Line="53" Column="1" />
+      <File FileName="BookList/Shared/SurveyPrompt.razor" Line="1" Column="1" />
+      <File FileName="BookList/Shared/MainLayout.razor" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="BookList" expanded="True">
+            <Node name="BookList" expanded="True">
+              <Node name="Pages" expanded="True" />
+              <Node name="Shared" expanded="True" />
+            </Node>
+            <Node name="BookListLibrary" expanded="True">
+              <Node name="Data" expanded="True" />
+              <Node name="Services" expanded="True">
+                <Node name="BookListService.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.BookList PreferredExecutionTarget="/Applications/Google Chrome.app" />
+</Properties>
