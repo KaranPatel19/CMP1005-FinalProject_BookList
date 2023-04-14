@@ -1,0 +1,59 @@
+﻿@page "/addnewbook"
+@using BookListLibrary.Data
+@using BookListLibrary.Services
+@inject BookListService BookListService
+@inject NavigationManager NavigationManager
+
+
+<PageTitle>Add New Book</PageTitle>
+
+<h1>Add New Book To Your WishList</h1>
+
+@if (errorMessage != null)
+{
+    <div class="alert alert-danger">
+        @errorMessage
+    </div>
+}
+
+<form>
+    <div class="form-group">
+        <label for="title">Title</label>
+        <input type="text" class="form-control" id="title" @bind-value="newBook.Title">
+    </div>
+    <div class="form-group">
+        <label for="author">Author</label>
+        <input type="text" class="form-control" id="author" @bind-value="newBook.Author">
+    </div>
+    <div class="form-group">
+        <label for="genre">Genre</label>
+        <input type="text" class="form-control" id="genre" @bind-value="newBook.Genre">
+    </div>
+    <div class="form-group">
+        <label for="description">Description</label>
+        <input type="text" class="form-control" id="description" @bind-value="newBook.Description">
+    </div>
+
+    <button type="submit" class="btn btn-primary" @onclick="AddBook">Add Book</button>
+</form>
+
+@code {
+    private BookList newBook = new BookList();
+    private string errorMessage;
+
+    private async Task AddBook()
+    {
+        try
+        {
+            
+
+            await BookListService.AddBookAsync(newBook);
+            NavigationManager.NavigateTo("/booklist");
+        }
+        catch (Exception ex)
+        {
+            errorMessage = ex.Message;
+        }
+    }
+
+}

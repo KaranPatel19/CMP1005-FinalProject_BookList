@@ -14,21 +14,27 @@ public class BookListService
     {
         _client = new FireSharp.FirebaseClient(FirebaseConfigHelper.Config);
     }
-
-    public Task<List<BookList>> GetAllBooksAsync()
+    public async Task AddBookAsync(BookList book)
     {
-        FirebaseResponse response = _client.Get("BookList");
-        dynamic data = JsonConvert.DeserializeObject<dynamic>(response.Body);
-        var list = new List<BookList>();
-        foreach (var item in data)
+        PushResponse response = await _client.PushAsync("BookList/", book);
+        int key = int.Parse(response.Result.name);
+        book.Id = key;
+        SetResponse setResponse = await _client.SetAsync($"BookList/{book.Id}", book);
+    }
+
+
+    public async Task<List<BookList>> GetAllBooksAsync()
+    {
+        FirebaseResponse response = await _client.GetAsync("BookList");
+        if (response.Body == "null")
         {
-            if (item != null)
-            {
-                var recipe = JsonConvert.DeserializeObject<BookList>(item.ToString());
-                list.Add(recipe);
-            }
+            return new List<BookList>();
         }
 
-        return Task.FromResult(list);
+        var data = JsonConvert.DeserializeObject<Dictionary<string, BookList>>(response.Body);
+        var list = data.Values.ToList();
+
+        return list;
     }
+
 }
