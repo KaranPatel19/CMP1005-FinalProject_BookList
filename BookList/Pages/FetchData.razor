@@ -20,6 +20,8 @@ else
                 <th>Author</th>
                 <th>Genre</th>
                 <th>Description</th>
+               
+
             </tr>
         </thead>
         <tbody>
@@ -30,6 +32,7 @@ else
                     <td>@book.Author</td>
                     <td>@book.Genre</td>
                     <td>@book.Description</td>
+                   
                 </tr>
             }
         </tbody>
@@ -43,4 +46,5 @@ else
     {
         books = await BookListService.GetAllBooksAsync();
     }
+   
 }
