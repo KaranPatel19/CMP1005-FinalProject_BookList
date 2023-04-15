@@ -1,12 +1,11 @@
-﻿using System;
-using Xunit;
-using BookListLibrary.Data;
-using BookListLibrary.Services;
+﻿using BookListLibrary.Services;
 
 namespace BookListTest
 {
     public class BookListServiceTests
     {
+        private object book;
+
         [Fact]
         public void GetBookAsync_ReturnsSampleBooks()
         {
@@ -31,7 +30,7 @@ namespace BookListTest
 
             // Act
             service.AddBookAsync(newBook).Wait();
-            var addedBook = service.GetBookByIdAsync(newBook.Id).Result;
+            var addedBook = service.AddBookAsync(book.Id).Result;
 
             // Assert
             Assert.NotNull(addedBook);
@@ -41,9 +40,9 @@ namespace BookListTest
             Assert.Equal(newBook.Description, addedBook.Description);
         }
 
-        
 
-       [Fact]
+
+        [Fact]
         public void DeleteBookAsync_BookIsDeletedSuccessfully()
         {
             // Arrange
@@ -52,7 +51,7 @@ namespace BookListTest
             service.AddBookAsync(bookToDelete).Wait();
 
             // Act
-          //  service.DeleteBookAsync(bookToDelete.Id).Wait();
+            //  service.DeleteBookAsync(bookToDelete.Id).Wait();
             var deletedBook = service.GetBookByIdAsync(bookToDelete.Id).Result;
 
             // Assert

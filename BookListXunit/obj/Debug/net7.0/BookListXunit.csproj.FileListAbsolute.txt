@@ -1,0 +1,6 @@
+/Users/karanpatel/Downloads/CMP1005-FinalProject_BookList-main 2/BookListXunit/bin/Debug/net7.0/CoverletSourceRootsMapping
+/Users/karanpatel/Downloads/CMP1005-FinalProject_BookList-main 2/BookListXunit/obj/Debug/net7.0/BookListXunit.csproj.AssemblyReference.cache
+/Users/karanpatel/Downloads/CMP1005-FinalProject_BookList-main 2/BookListXunit/obj/Debug/net7.0/BookListXunit.GeneratedMSBuildEditorConfig.editorconfig
+/Users/karanpatel/Downloads/CMP1005-FinalProject_BookList-main 2/BookListXunit/obj/Debug/net7.0/BookListXunit.AssemblyInfoInputs.cache
+/Users/karanpatel/Downloads/CMP1005-FinalProject_BookList-main 2/BookListXunit/obj/Debug/net7.0/BookListXunit.AssemblyInfo.cs
+/Users/karanpatel/Downloads/CMP1005-FinalProject_BookList-main 2/BookListXunit/obj/Debug/net7.0/BookListXunit.csproj.CoreCompileInputs.cache
