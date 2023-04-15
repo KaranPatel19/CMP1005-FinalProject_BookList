@@ -1,4 +1,7 @@
-﻿<Router AppAssembly="@typeof(App).Assembly">
+﻿
+@inject NavigationManager NavigationManager
+
+<Router AppAssembly="@typeof(App).Assembly">
     <Found Context="routeData">
         <RouteView RouteData="@routeData" DefaultLayout="@typeof(MainLayout)" />
         <FocusOnNavigate RouteData="@routeData" Selector="h1" />
@@ -6,8 +9,14 @@
     <NotFound>
         <PageTitle>Not found</PageTitle>
         <LayoutView Layout="@typeof(MainLayout)">
-            <p role="alert">Sorry, there's nothing at this address.</p>
+            <button type="button" class="btn btn-secondary mt-3 ml-2" @onclick="Addbook">Add book to your Wishlist</button>
+
         </LayoutView>
     </NotFound>
 </Router>
-
+@code {
+        void Addbook()
+        {
+            NavigationManager.NavigateTo("/addnewbook");
+        }
+    }

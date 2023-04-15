@@ -1,44 +1,39 @@
-﻿<Properties StartupConfiguration="{99CFF24B-8E18-4380-9353-C6065E100C41}|Default">
+﻿<Properties StartupConfiguration="{397261E1-03FE-4B54-99E3-4AA4D91D3981}|http">
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.BookListTest PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="BookListLibrary/Services/BookListService.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="BookList/Program.cs">
     <Files>
-      <File FileName="BookListLibrary/Services/BookListService.cs" Line="42" Column="6" />
-      <File FileName="BookListLibrary/Data/BookList.cs" Line="1" Column="1" />
-      <File FileName="BookList/Pages/FetchData.razor" Line="23" Column="16" />
-      <File FileName="BookListLibrary/Services/FirebaseConfigHelper.cs" />
-      <File FileName="BookList/Program.cs" />
-      <File FileName="BookList/Shared/NavMenu.razor" Line="20" Column="87" />
-      <File FileName="BookList/Shared/SurveyPrompt.razor" Line="17" Column="1" />
-      <File FileName="BookList/Shared/MainLayout.razor" Line="16" Column="18" />
-      <File FileName="BookList/Pages/AddNewBook.razor" Line="38" Column="44" />
-      <File FileName="BookList/Pages/_Host.cshtml" Line="1" Column="1" />
+      <File FileName="BookListLibrary/Services/BookListService.cs" Line="46" Column="6" />
+      <File FileName="BookListLibrary/Data/BookList.cs" Line="7" Column="6" />
+      <File FileName="BookList/Pages/FetchData.razor" Line="38" Column="1" />
+      <File FileName="BookListLibrary/Services/FirebaseConfigHelper.cs" Line="1" Column="1" />
+      <File FileName="BookList/Program.cs" Line="31" Column="1" />
+      <File FileName="BookList/Shared/NavMenu.razor" Line="23" Column="1" />
+      <File FileName="BookList/Shared/SurveyPrompt.razor" />
+      <File FileName="BookList/Shared/MainLayout.razor" Line="21" Column="1" />
+      <File FileName="BookList/Pages/AddNewBook.razor" Line="81" Column="1" />
+      <File FileName="BookList/Pages/_Host.cshtml" />
       <File FileName="BookList/Pages/Error.cshtml" Line="1" Column="1" />
-      <File FileName="BookList/Properties/launchSettings.json" Line="1" Column="1" />
+      <File FileName="BookList/Properties/launchSettings.json" />
+      <File FileName="BookListTest/BookListServiceTests.cs" Line="59" Column="10" />
+      <File FileName="BookListTest/Usings.cs" Line="1" Column="1" />
+      <File FileName="BookListLibrary/Class1.cs" Line="1" Column="1" />
+      <File FileName="BookListXunitTest/UnitTest1.cs" Line="1" Column="1" />
+      <File FileName="BookListXunitTest/BookListServiceXunitTests.cs" Line="33" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="BookList" expanded="True">
-            <Node name="BookList" expanded="True">
-              <Node name="Pages" expanded="True" />
-              <Node name="Properties" expanded="True" />
-              <Node name="Shared" expanded="True" />
-            </Node>
-            <Node name="BookListLibrary" expanded="True">
-              <Node name="Data" expanded="True" />
-              <Node name="Services" expanded="True">
-                <Node name="BookListService.cs" selected="True" />
-              </Node>
-            </Node>
-          </Node>
+          <Node name="BookList" expanded="True" />
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.BookList PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.ItemProperties.BookListXunitTest FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.BookListXunitTest PreferredExecutionTarget="MonoDevelop.Default" />
 </Properties>

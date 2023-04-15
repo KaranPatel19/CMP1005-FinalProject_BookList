@@ -34,3 +34,15 @@
 /Users/karanpatel/Downloads/CMP1005-FinalProject_BookList-main/BookListLibrary/obj/Debug/net7.0/refint/BookListLibrary.dll
 /Users/karanpatel/Downloads/CMP1005-FinalProject_BookList-main/BookListLibrary/obj/Debug/net7.0/BookListLibrary.pdb
 /Users/karanpatel/Downloads/CMP1005-FinalProject_BookList-main/BookListLibrary/obj/Debug/net7.0/ref/BookListLibrary.dll
+/Users/karanpatel/Downloads/CMP1005-FinalProject_BookList-main 2/BookListLibrary/bin/Debug/net7.0/BookListLibrary.deps.json
+/Users/karanpatel/Downloads/CMP1005-FinalProject_BookList-main 2/BookListLibrary/bin/Debug/net7.0/BookListLibrary.dll
+/Users/karanpatel/Downloads/CMP1005-FinalProject_BookList-main 2/BookListLibrary/bin/Debug/net7.0/BookListLibrary.pdb
+/Users/karanpatel/Downloads/CMP1005-FinalProject_BookList-main 2/BookListLibrary/obj/Debug/net7.0/BookListLibrary.csproj.AssemblyReference.cache
+/Users/karanpatel/Downloads/CMP1005-FinalProject_BookList-main 2/BookListLibrary/obj/Debug/net7.0/BookListLibrary.GeneratedMSBuildEditorConfig.editorconfig
+/Users/karanpatel/Downloads/CMP1005-FinalProject_BookList-main 2/BookListLibrary/obj/Debug/net7.0/BookListLibrary.AssemblyInfoInputs.cache
+/Users/karanpatel/Downloads/CMP1005-FinalProject_BookList-main 2/BookListLibrary/obj/Debug/net7.0/BookListLibrary.AssemblyInfo.cs
+/Users/karanpatel/Downloads/CMP1005-FinalProject_BookList-main 2/BookListLibrary/obj/Debug/net7.0/BookListLibrary.csproj.CoreCompileInputs.cache
+/Users/karanpatel/Downloads/CMP1005-FinalProject_BookList-main 2/BookListLibrary/obj/Debug/net7.0/BookListLibrary.dll
+/Users/karanpatel/Downloads/CMP1005-FinalProject_BookList-main 2/BookListLibrary/obj/Debug/net7.0/refint/BookListLibrary.dll
+/Users/karanpatel/Downloads/CMP1005-FinalProject_BookList-main 2/BookListLibrary/obj/Debug/net7.0/BookListLibrary.pdb
+/Users/karanpatel/Downloads/CMP1005-FinalProject_BookList-main 2/BookListLibrary/obj/Debug/net7.0/ref/BookListLibrary.dll
