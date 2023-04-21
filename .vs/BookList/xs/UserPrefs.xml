@@ -1,39 +1,53 @@
-﻿<Properties StartupConfiguration="{397261E1-03FE-4B54-99E3-4AA4D91D3981}|http">
+﻿<Properties StartupConfiguration="{35871C75-4A18-40C9-A006-8BBA3ADBD222}|https">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.BookListTest PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="BookList/Program.cs">
+  <MonoDevelop.Ide.ItemProperties.BookListTest PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.ItemProperties.BookListXunitTest PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="BookList/appsettings.Development.json">
     <Files>
-      <File FileName="BookListLibrary/Services/BookListService.cs" Line="46" Column="6" />
-      <File FileName="BookListLibrary/Data/BookList.cs" Line="7" Column="6" />
-      <File FileName="BookList/Pages/FetchData.razor" Line="38" Column="1" />
-      <File FileName="BookListLibrary/Services/FirebaseConfigHelper.cs" Line="1" Column="1" />
-      <File FileName="BookList/Program.cs" Line="31" Column="1" />
-      <File FileName="BookList/Shared/NavMenu.razor" Line="23" Column="1" />
-      <File FileName="BookList/Shared/SurveyPrompt.razor" />
-      <File FileName="BookList/Shared/MainLayout.razor" Line="21" Column="1" />
-      <File FileName="BookList/Pages/AddNewBook.razor" Line="81" Column="1" />
-      <File FileName="BookList/Pages/_Host.cshtml" />
-      <File FileName="BookList/Pages/Error.cshtml" Line="1" Column="1" />
-      <File FileName="BookList/Properties/launchSettings.json" />
-      <File FileName="BookListTest/BookListServiceTests.cs" Line="59" Column="10" />
-      <File FileName="BookListTest/Usings.cs" Line="1" Column="1" />
-      <File FileName="BookListLibrary/Class1.cs" Line="1" Column="1" />
-      <File FileName="BookListXunitTest/UnitTest1.cs" Line="1" Column="1" />
-      <File FileName="BookListXunitTest/BookListServiceXunitTests.cs" Line="33" Column="1" />
+      <File FileName="BookListLibrary/Data/BookList.cs" />
+      <File FileName="BookList/Pages/FetchData.razor" />
+      <File FileName="BookList/Pages/AddNewBook.razor" />
+      <File FileName="BookListLibrary/Services/BookListService.cs" />
+      <File FileName="BookList/Shared/MainLayout.razor" />
+      <File FileName="BookListLibrary/LinqQueries/BookLinq.cs" />
+      <File FileName="BookListLibrary/Exceptions/BookValidationException.cs" />
+      <File FileName="BookListTest/BookListServiceTests.cs" />
+      <File FileName="BookListXunit/BookListServiceXunitTests.cs" />
+      <File FileName="BookListAPI/Controllers/BookListController.cs" />
+      <File FileName="BookList/Program.cs" />
+      <File FileName="BookListLibrary/Services/FirebaseConfigHelper.cs" />
+      <File FileName="BookList/appsettings.json" />
+      <File FileName="BookList/appsettings.Development.json" Line="9" Column="59" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="BookList" expanded="True" />
+          <Node name="BookList" expanded="True">
+            <Node name="BookList" expanded="True">
+              <Node name="appsettings.json" expanded="True">
+                <Node name="appsettings.Development.json" selected="True" />
+              </Node>
+            </Node>
+            <Node name="BookListAPI" expanded="True">
+              <Node name="Controllers" expanded="True" />
+            </Node>
+            <Node name="BookListLibrary" expanded="True">
+              <Node name="Data" expanded="True" />
+              <Node name="Exceptions" expanded="True" />
+              <Node name="LinqQueries" expanded="True" />
+              <Node name="Services" expanded="True" />
+            </Node>
+            <Node name="BookListTest" expanded="True" />
+            <Node name="BookListXunit" expanded="True" />
+          </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.BookList PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.ItemProperties.BookListXunitTest PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.ItemProperties.BookListAPI PreferredExecutionTarget="/Applications/Google Chrome.app" />
 </Properties>

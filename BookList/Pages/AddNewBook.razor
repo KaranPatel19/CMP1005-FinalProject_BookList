@@ -1,4 +1,5 @@
 ﻿@page "/addnewbook"
+@page "/addnewbook/{Id:int?}/{Title?}/{Author?}/{Genre?}/{Description?}"
 @using BookListLibrary.Data
 @using BookListLibrary.Services
 @using BookListLibrary.Exceptions
@@ -17,7 +18,38 @@
                     @errorMessage
                 </div>
             }
-            <form>
+            @if (Id != null)
+            {
+
+
+                <div class="form-group">
+                    <label for="title">Title</label>
+                    <input type="text" class="form-control" id="title" @bind-value="@Title">
+                </div>
+                <div class="form-group">
+                    <label for="author">Author</label>
+                    <input type="text" class="form-control" id="author" @bind-value="@Author">
+                </div>
+                <div class="form-group">
+                    <label for="genre">Genre</label>
+                    <input type="text" class="form-control" id="genre" @bind-value="@Genre">
+                </div>
+                <div class="form-group">
+                    <label for="description">Description</label>
+                    <input type="text" class="form-control" id="description" @bind-value="@Description">
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary mt-3" @onclick="savebook">Save Book</button>
+                    <button type="button" class="btn btn-secondary mt-3 ml-2" @onclick="ViewWishList">View WishList</button>
+                </div>
+
+            }
+            else
+            {
+                 <div class="form-group">
+             <label for="title">Id</label>
+             <input type="text" class="form-control" id="Id" @bind-value="newBook.Id">
+         </div>
                 <div class="form-group">
                     <label for="title">Title</label>
                     <input type="text" class="form-control" id="title" @bind-value="newBook.Title">
@@ -38,7 +70,10 @@
                     <button type="submit" class="btn btn-primary mt-3" @onclick="AddBook">Add Book</button>
                     <button type="button" class="btn btn-secondary mt-3 ml-2" @onclick="ViewWishList">View WishList</button>
                 </div>
-            </form>
+
+            }
+
+
         </div>
     </div>
 </div>
@@ -52,6 +87,18 @@
 @code {
     private BookList newBook = new BookList();
     private string errorMessage;
+
+
+    [Parameter]
+    public int? Id { get; set; }
+    [Parameter]
+    public string? Title { get; set; }
+    [Parameter]
+    public string? Author { get; set; }
+    [Parameter]
+    public string? Genre { get; set; }
+    [Parameter]
+    public string? Description { get; set; }
 
     private async Task AddBook()
     {
@@ -69,12 +116,26 @@
             errorMessage = ex.Message;
         }
     }
+    public async Task savebook()
+    {
+        try
+        {
+            await BookListService.SaveBookAsync(Id.Value, Title, Author, Genre, Description);
+            NavigationManager.NavigateTo("/fetchdata");
+
+        }
+        catch (BookValidationException ex)
+        {
+            errorMessage = ex.Message;
+        }
+        catch (Exception ex)
+        {
+            errorMessage = ex.Message;
+        }
+    }
     private void ViewWishList()
     {
         NavigationManager.NavigateTo("/fetchdata");
     }
-
-
-
 
 }

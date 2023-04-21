@@ -10,13 +10,17 @@
         <PageTitle>Not found</PageTitle>
         <LayoutView Layout="@typeof(MainLayout)">
             <button type="button" class="btn btn-secondary mt-3 ml-2" @onclick="Addbook">Add book to your Wishlist</button>
-
+            <button type="submit" class="btn btn-primary mt-3" @onclick="SeeWishlist">See Your Wishlist</button>
         </LayoutView>
     </NotFound>
 </Router>
 @code {
-        void Addbook()
-        {
-            NavigationManager.NavigateTo("/addnewbook");
-        }
+    void Addbook()
+    {
+        NavigationManager.NavigateTo("/addnewbook");
+    }
+    void SeeWishlist()
+    {
+        NavigationManager.NavigateTo("/fetchdata ");
+    }
     }
