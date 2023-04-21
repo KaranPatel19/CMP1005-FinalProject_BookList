@@ -1,7 +1,10 @@
 ﻿@page "/fetchdata"
+
 @using BookListLibrary.Data
 @using BookListLibrary.Services
 @inject BookListService BookListService
+
+@inject NavigationManager NavigationManager
 
 <PageTitle>Book List</PageTitle>
 
@@ -20,6 +23,7 @@ else
                 <th>Author</th>
                 <th>Genre</th>
                 <th>Description</th>
+                <th>Actions</th> <!-- Add this line -->
             </tr>
         </thead>
         <tbody>
@@ -30,14 +34,54 @@ else
                     <td>@book.Author</td>
                     <td>@book.Genre</td>
                     <td>@book.Description</td>
+                    <td class="edit-button" @onclick="() => Edit(book.Id,book.Title,book.Author, book.Genre, book.Description)">Edit</td>
+                    <!--<td class="delete-button" @onclick="() => Delete(book.Id)">Delete</td>-->
                 </tr>
             }
         </tbody>
+
     </table>
+    <style>
+        .edit-button {
+            background-color: green;
+            color: green;
+            padding: 8px 16px;
+            border: double;
+            background-color:green;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+
+
 }
 
 @code {
     private List<BookList> books;
+    private BookList book;
+
+    public async Task Edit(int Id, string Title, string Author, string Genre, string Description)
+    {
+        NavigationManager.NavigateTo($"/addnewbook/{Id}/{Title}/{Author}/{Genre}/{Description}");
+
+    }
+
+    private async Task Delete(int Id)
+    {
+        try
+        {
+            await BookListService.DeleteBookAsync(Id);
+            NavigationManager.NavigateTo("/fetchdata");
+        }
+
+        catch (Exception ex)
+        {
+            throw ex;
+        }
+    }
 
     protected override async Task OnInitializedAsync()
     {
